@@ -16,5 +16,6 @@ MonoBehaviour:
   Values:
   - featureSets:
     - com.microsoft.openxr.featureset.wmr
+    - com.microsoft.openxr.featureset.appremoting
   - featureSets: []
   m_vulkanAdditionalGraphicsQueue: 0

@@ -10,10 +10,11 @@ public class TimerStart : MonoBehaviour
     [SerializeField]
     public float countdownTime; // Set the initial countdown time in seconds
     private float remainingTime;
-    private bool isRunning = false;
+    private bool isRunning;
 
     void Start()
     {
+        isRunning = false;
         startbutton.SetActive(true);
         timerstartscreen.SetActive(false);
         remainingTime = countdownTime;
@@ -56,7 +57,7 @@ public class TimerStart : MonoBehaviour
     {
         timerstartscreen.SetActive(false);
         startbutton.SetActive(true);
-
+        isRunning = false;
         // Log to check if OnReset() runs correctly
         Debug.Log("OnReset() method executed. Timer reset.");
     }
