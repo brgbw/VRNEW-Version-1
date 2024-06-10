@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,9 +16,12 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI HighScoreText;
 
+
     public int currentscore;
     public int highscore;
-    
+
+
+
     void Update()
     {
         currentscore = Player.GetComponent<Score>().Points;
@@ -28,7 +32,6 @@ public class ScoreManager : MonoBehaviour
             highscore = currentscore;
             HighScoreText.text = "Highest Score: "+ Player.GetComponent<Score>().Points.ToString();
         }
-
 
     }
 }

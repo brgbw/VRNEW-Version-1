@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class PlayerTeleportation : MonoBehaviour
 {
-    public Camera PlayerCamera;
-    public Transform GamePosition;  // Use Transform instead of Camera to just get the position and rotation
+
     public Interactable button;  // Use Interactable for MRTK button
     [SerializeField]
     public GameObject room1;

@@ -18,9 +18,8 @@ public class CloseTutorialScript : MonoBehaviour
     public void HideTutorial()
     {
         tutorialdescription1.SetActive(false);
-        tutorialbutton1.gameObject.SetActive(true);
-        Playbutton1.gameObject.SetActive(true);
-        tutorialbutton1.gameObject.SetActive(true);
-        Playbutton1.gameObject.SetActive(true);
+        tutorialbutton1.enabled = true;
+        Playbutton1.enabled = true;
+
     }
 }
