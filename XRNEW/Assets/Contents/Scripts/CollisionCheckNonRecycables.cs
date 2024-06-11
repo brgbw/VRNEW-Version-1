@@ -9,19 +9,42 @@ public class CollisionCheckNonRecycables : MonoBehaviour
     public int Points;
     [SerializeField]
     public GameObject Player;
+    [SerializeField]
+    public AudioClip wrongsoundeffect;
+
+    private AudioSource wrongsound;
+    [SerializeField]
+    public AudioClip correctsoundeffect;
+
+    private AudioSource correctsound;
+
+    void Start()
+    {
+        wrongsound = gameObject.AddComponent<AudioSource>();
+        wrongsound.playOnAwake = false;
+        wrongsound.clip = wrongsoundeffect;
+        wrongsound.volume = 5.0f;
+        correctsound = gameObject.AddComponent<AudioSource>();
+        correctsound.playOnAwake = false;
+        correctsound.clip = correctsoundeffect;
+        correctsound.volume = 2.0f;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+    
         if (other.gameObject.tag == "NotRecycable")
         {
-            Debug.Log(other.gameObject.name + " is destroyed");
+    
             Destroy(other.gameObject);
             Player.GetComponent<Score>().Points += 1;
+            correctsound.Play();
         }
 
         if (other.gameObject.tag == "Recycable")
         {
             Destroy(other.gameObject);
+            wrongsound.Play();
         }
 
     }

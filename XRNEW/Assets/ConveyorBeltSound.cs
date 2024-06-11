@@ -21,6 +21,7 @@ public class ConveyorBeltSound : MonoBehaviour
         audioSource.playOnAwake = false;
         audioSource.clip = conveyorsoundeffect;
         audioSource.Stop();
+        audioSource.volume = 2.0f;
     }
 
 

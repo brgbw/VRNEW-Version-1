@@ -1,37 +1,84 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField]
-    public GameObject Player;
+    private GameObject player;
 
     [SerializeField]
-    public TextMeshProUGUI ScoreText;
+    private TextMeshProUGUI scoreText;
 
     [SerializeField]
-    public TextMeshProUGUI HighScoreText;
+    private TextMeshProUGUI highScoreText;
 
+    [SerializeField]
+    private GameObject playButton;
 
-    public int currentscore;
-    public int highscore;
+    private int currentScore;
+    private int highScore;
+    private bool playerIsInGame;
 
-
-
-    void Update()
+    private void Start()
     {
-        currentscore = Player.GetComponent<Score>().Points;
-        ScoreText.text = "Current Score: " + Player.GetComponent<Score>().Points.ToString();
+        playerIsInGame = false;
+        currentScore = 0;
+        highScore = 0;
+        UpdateScoreDisplay();
+        UpdateHighScoreDisplay();
+    }
 
-        if (currentscore > highscore)
+    private void Update()
+    {
+        CheckPlayButtonState();
+        UpdateCurrentScore();
+        CheckHighScore();
+    }
+
+    private void CheckPlayButtonState()
+    {
+        playerIsInGame = !playButton.activeSelf;
+
+        if (!playerIsInGame)
         {
-            highscore = currentscore;
-            HighScoreText.text = "Highest Score: "+ Player.GetComponent<Score>().Points.ToString();
+            currentScore = 0;
+
+            UpdateScoreDisplay(); // Update the display even when the game is not active
+        }
+    }
+
+    private void UpdateCurrentScore()
+    {
+        if (playerIsInGame)
+        {
+            currentScore = player.GetComponent<Score>().Points;
+            UpdateScoreDisplay();
+        }
+        if (!playerIsInGame)
+        {
+            currentScore = 0;
+            UpdateScoreDisplay();
         }
 
     }
+
+    private void CheckHighScore()
+    {
+        if (currentScore > highScore)
+        {
+            highScore = currentScore;
+            UpdateHighScoreDisplay();
+        }
+    }
+
+    private void UpdateScoreDisplay()
+    {
+        scoreText.text = "Current Score: " + currentScore;
+    }
+
+    private void UpdateHighScoreDisplay()
+    {
+        highScoreText.text = "Highest Score: " + highScore;
+    }
+
 }

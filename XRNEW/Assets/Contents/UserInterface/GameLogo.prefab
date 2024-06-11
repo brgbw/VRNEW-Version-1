@@ -148,7 +148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'recycables '
+  m_text: recyclables
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c334791383d1d8042b3a69a77b6b3283, type: 2}
   m_sharedMaterial: {fileID: 21150606767620462, guid: c334791383d1d8042b3a69a77b6b3283, type: 2}
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'recycables '
+  m_text: recyclables
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c334791383d1d8042b3a69a77b6b3283, type: 2}
   m_sharedMaterial: {fileID: 21150606767620462, guid: c334791383d1d8042b3a69a77b6b3283, type: 2}
