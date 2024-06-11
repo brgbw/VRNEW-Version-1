@@ -2,8 +2,6 @@ using Microsoft.MixedReality.Toolkit.UI;
 using TMPro;
 using UnityEngine;
 using System.Collections;
-using UnityEngine;
-
 public class TimerStart : MonoBehaviour
 {
     public GameObject startbutton;

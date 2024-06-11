@@ -35,10 +35,8 @@ public class CollisionCheckerRecycables : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
         if (other.gameObject.tag == "Recycable")
         {
-            Debug.Log(other.gameObject.name + " is destroyed");
             Destroy(other.gameObject);
             Player.GetComponent<Score>().Points += 1;
             correctsound.volume = 1;

@@ -56,7 +56,7 @@ public class ScoreManager : MonoBehaviour
         }
         if (!playerIsInGame)
         {
-            currentScore = 0;
+            player.GetComponent<Score>().Points = 0;
             UpdateScoreDisplay();
         }
 
@@ -66,6 +66,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (currentScore > highScore)
         {
+            player.GetComponent<Score>().HighScore = currentScore;
             highScore = currentScore;
             UpdateHighScoreDisplay();
         }
