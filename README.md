@@ -6,13 +6,13 @@ Installatiom & Usage Instructions:
 
 Development Tools Used:
 
-  Unity 2019
+  -Unity 2019
   
-  Visual Studio 2022
+  -Visual Studio 2022
   
-  Mixed Reality Toolkit
+  -Mixed Reality Toolkit
   
-  Github
+  -Github
   
   
 
