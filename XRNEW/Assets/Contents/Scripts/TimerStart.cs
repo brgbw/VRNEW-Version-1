@@ -30,10 +30,10 @@ public class TimerStart : MonoBehaviour
 
     void Update()
     {
+
         if (isRunning)
         {
             remainingTime -= Time.deltaTime;
-           
             UpdateTimerDisplay(remainingTime);
             if (remainingTime <= 0f)
             {
@@ -80,9 +80,9 @@ public class TimerStart : MonoBehaviour
     private void UpdateTimerDisplay(float time)
     {
         timerText.color = new Color(1, 1, 1);
-        int minutes = Mathf.FloorToInt(time / 60F);
-        int seconds = Mathf.FloorToInt(time % 60F);
-        int milliseconds = Mathf.FloorToInt((time * 1000F) % 1000F);
+        int minutes = Mathf.FloorToInt(time / 60f);
+        int seconds = Mathf.FloorToInt(time % 60f);
+        int milliseconds = Mathf.FloorToInt((time * 1000f) % 1000f);
         timerText.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
         if (remainingTime <= 5f)
         {
