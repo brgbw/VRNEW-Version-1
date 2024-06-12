@@ -20,6 +20,7 @@
 	-Unity 2019
 	-Visual Studio 2022
   	-Mixed Reality Toolkit
+<<<<<<< HEAD
 	-GitHub Desktop
 	- Unity Assets
   
@@ -49,4 +50,12 @@
 
 
 
+=======
+	-Github
+ 	-WavePad Audio Editor
+  
+
+#  Licensing:<br/>
+### ‎ ‎ ‎ ‎ ‎ List of Free Models used:<br/>
+>>>>>>> 3eb4ced43178a53bb2e050b3eb43b4a1f63b0f7e
   
