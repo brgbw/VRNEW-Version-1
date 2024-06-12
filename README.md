@@ -3,10 +3,16 @@
 
 # Installatiom & Usage Instructions: <br/>
 ### Installation: <br/>
+1)Open file, go to Open Scene, select VR.unity scene
+2)Press on file, go to Build Settings, select VR.unity in Scene in Build
+3) Now press on Android Platform
+4) Connect Meta Quest 2 VR Headset to the computer via USB C to C
+5) Press Switch Platform to Android Platform
+6) Select Meta Quest 2 Device on Run Device in Build Settings
+7) Select Build and Run
+
 
 ### Usage Intructions:<br/>
-1) Deploy Meta Quest 2 device on the game
-
 1) After loading the game, look to the right to differentiate items which are recyclable and those that are not
 2) Start the game by pressing 'Play' then 'Start Game'
 3) Items would appear in front of you, place:<br/>
@@ -46,16 +52,4 @@
 - Mixed Reality ToolKit
 - Android SDK
 
-
-
-
-
-=======
-	-Github
- 	-WavePad Audio Editor
-  
-
-#  Licensing:<br/>
-### ‎ ‎ ‎ ‎ ‎ List of Free Models used:<br/>
->>>>>>> 3eb4ced43178a53bb2e050b3eb43b4a1f63b0f7e
   
