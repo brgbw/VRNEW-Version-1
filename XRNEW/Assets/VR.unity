@@ -5381,6 +5381,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2036955337}
     - target: {fileID: 1000392035731340968, guid: b7a66241a3da185489b1053325f32335, type: 3}
+      propertyPath: description
+      value: '  A plastic bottle is a lightweight, durable container used for storing
+        liquids, typically made from materials like PET or HDPE, and commonly used
+        for beverages.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000392035731340968, guid: b7a66241a3da185489b1053325f32335, type: 3}
       propertyPath: RecyclingIcon
       value: 
       objectReference: {fileID: 622071235}
@@ -7381,6 +7387,12 @@ PrefabInstance:
       propertyPath: Isrecycable
       value: 
       objectReference: {fileID: 2036955337}
+    - target: {fileID: 5967532052971134377, guid: 292f970ff2efa5b4486a0bebc6b03cbf, type: 3}
+      propertyPath: description
+      value: '  A ceramic plate is a flat, dishware item made from fired clay, used
+        for serving and eating food, known for its durability, heat resistance, and
+        often decorative designs.'
+      objectReference: {fileID: 0}
     - target: {fileID: 5967532052971134377, guid: 292f970ff2efa5b4486a0bebc6b03cbf, type: 3}
       propertyPath: RecyclingIcon
       value: 
