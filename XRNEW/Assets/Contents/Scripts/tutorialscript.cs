@@ -21,7 +21,9 @@ public class tutorialscript : MonoBehaviour
         tutorialdescription.SetActive(false);
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = soundeffect;
+        audioSource.loop = true;
         audioSource.Play();
+        
     }
 
     // Update is called once per frame
