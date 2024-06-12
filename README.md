@@ -28,8 +28,9 @@
 	-Unity 2021
 	-Visual Studio 2022
   	-Mixed Reality Toolkit
-	- GitHub Desktop
-	- Unity Assets
+	-GitHub Desktop
+	-Unity Assets
+ 	-WavePad Audio Editor
   
 
 #  Licensing:<br/>
