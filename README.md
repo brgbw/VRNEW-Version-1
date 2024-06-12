@@ -1,12 +1,19 @@
 # Team Starfish <br/>
 
 
-# Installatiom & Usage Instructions: <br/>
+# Installation & Usage Instructions: <br/>
 ### Installation: <br/>
+1) Open file, go to Open Scene, select VR.unity scene
+2) Press on file, go to Build Settings, select VR.unity in Scene in Build
+3) Now press on Android Platform
+4) Connect Meta Quest 2 VR Headset to the computer via USB C to C
+5) Press Switch Platform to Android Platform
+6) Select Meta Quest 2 Device on Run Device in Build Settings
+7) Select Build and Run
+8) Make a file name and save as type .apk and press Save
+9) Prompt of unsupported input handling will appear, click Yes
 
 ### Usage Intructions:<br/>
-1) Deploy Meta Quest 2 device on the game
-
 1) After loading the game, look to the right to differentiate items which are recyclable and those that are not
 2) Start the game by pressing 'Play' then 'Start Game'
 3) Items would appear in front of you, place:<br/>
@@ -16,17 +23,18 @@
 5) Wait for the items to clear
 6) Press 'Start Game' to play agaiin or 'Return Back' to return to title screen
 
+
 # Development Tools Used:<br/>
-	-Unity 2019
+	-Unity 2021
 	-Visual Studio 2022
   	-Mixed Reality Toolkit
-<<<<<<< HEAD
 	-GitHub Desktop
-	- Unity Assets
+	-Unity Assets
+ 	-WavePad Audio Editor
   
 
 #  Licensing:<br/>
-## ‎ ‎ ‎ ‎ ‎ List of free assets used:<br/>
+### List of free assets used:<br/>
 - Books by VIS Games
 - Clipboard by cookiepopworks.com
 - Folding Table and Chair PBR by devotid
@@ -39,23 +47,11 @@
 - Sci-Fi Texture Pack 1by FireBolt Studios
 - Stylized Sci-Fi Texture by LowlyPoly
 - Survival Game Tools by cookiepopworks.com
--Pressable HoloLens Button by Mixed Reality Toolkit
+- Pressable HoloLens Button by Mixed Reality Toolkit
 
 
-##Software development Kit used
+### Software development Kit used
 - Mixed Reality ToolKit
 - Android SDK
 
-
-
-
-
-=======
-	-Github
- 	-WavePad Audio Editor
-  
-
-#  Licensing:<br/>
-### ‎ ‎ ‎ ‎ ‎ List of Free Models used:<br/>
->>>>>>> 3eb4ced43178a53bb2e050b3eb43b4a1f63b0f7e
   
