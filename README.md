@@ -3,8 +3,8 @@
 
 # Installation & Usage Instructions: <br/>
 ### Installation: <br/>
-1)Open file, go to Open Scene, select VR.unity scene
-2)Press on file, go to Build Settings, select VR.unity in Scene in Build
+1) Open file, go to Open Scene, select VR.unity scene
+2) Press on file, go to Build Settings, select VR.unity in Scene in Build
 3) Now press on Android Platform
 4) Connect Meta Quest 2 VR Headset to the computer via USB C to C
 5) Press Switch Platform to Android Platform
@@ -34,7 +34,7 @@
   
 
 #  Licensing:<br/>
-## ‎ ‎ ‎ ‎ ‎ List of free assets used:<br/>
+### List of free assets used:<br/>
 - Books by VIS Games
 - Clipboard by cookiepopworks.com
 - Folding Table and Chair PBR by devotid
@@ -50,7 +50,7 @@
 - Pressable HoloLens Button by Mixed Reality Toolkit
 
 
-## ‎ ‎ ‎ ‎ ‎ Software development Kit used
+### Software development Kit used
 - Mixed Reality ToolKit
 - Android SDK
 
