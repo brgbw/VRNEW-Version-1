@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class ScoreManager : MonoBehaviour
     private int currentScore;
     private int highScore;
     private bool playerIsInGame;
+    private Coroutine scoreDisplayCoroutine; // Reference to the coroutine
 
     private void Start()
     {
@@ -42,7 +44,6 @@ public class ScoreManager : MonoBehaviour
         if (!playerIsInGame)
         {
             currentScore = 0;
-
             UpdateScoreDisplay(); // Update the display even when the game is not active
         }
     }
@@ -59,7 +60,6 @@ public class ScoreManager : MonoBehaviour
             player.GetComponent<Score>().Points = 0;
             UpdateScoreDisplay();
         }
-
     }
 
     private void CheckHighScore()
@@ -74,12 +74,23 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateScoreDisplay()
     {
+        if (scoreDisplayCoroutine != null)
+        {
+            StopCoroutine(scoreDisplayCoroutine);
+        }
         scoreText.text = "Current Score: " + currentScore;
+        scoreText.gameObject.SetActive(true);
+        scoreDisplayCoroutine = StartCoroutine(HideScoreAfterDelay(2f));
+    }
+
+    private IEnumerator HideScoreAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        scoreText.gameObject.SetActive(false);
     }
 
     private void UpdateHighScoreDisplay()
     {
         highScoreText.text = "Highest Score: " + highScore;
     }
-
 }

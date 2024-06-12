@@ -437,8 +437,12 @@ PrefabInstance:
       objectReference: {fileID: 1926495329}
     - target: {fileID: 2386422871326841940, guid: 5dff17bbb0ec7f04c8b424a7bbfb0559, type: 3}
       propertyPath: countdownTime
-      value: 120
+      value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2386422871326841940, guid: 5dff17bbb0ec7f04c8b424a7bbfb0559, type: 3}
+      propertyPath: timerSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d4e1d6d9f69fe654b9c7f8cbbf30b335, type: 3}
     - target: {fileID: 2386422871326841940, guid: 5dff17bbb0ec7f04c8b424a7bbfb0559, type: 3}
       propertyPath: ReturnMenuButton
       value: 
@@ -1119,6 +1123,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433794247578170, guid: da536aa57b3c6824093ab141245a54ba, type: 3}
   m_PrefabInstance: {fileID: 117333476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &461426648 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+  m_PrefabInstance: {fileID: 39908285970976429}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &468613129
 GameObject:
@@ -3236,6 +3245,7 @@ Transform:
   - {fileID: 1894594609}
   - {fileID: 5758991912641982098}
   - {fileID: 1505984771}
+  - {fileID: 461426648}
   m_Father: {fileID: 1881990630}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5313,6 +5323,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6478352399238144615, guid: d1cc0925eb5c2ef4193941a2e6a325ff, type: 3}
   m_PrefabInstance: {fileID: 6478352397671386918}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &39908285970976429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1445872076}
+    m_Modifications:
+    - target: {fileID: 39908286147182964, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 217224592}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.7743
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4017
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.219
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182965, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 39908286147182970, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+      propertyPath: m_Name
+      value: ResetTransformButton
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 39908286204802246, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: dea45db238dc71648b1150c68fe087aa, type: 3}
 --- !u!1001 &698852733115723876
 PrefabInstance:
   m_ObjectHideFlags: 0
