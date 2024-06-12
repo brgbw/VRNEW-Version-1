@@ -1,7 +1,7 @@
 # Team Starfish <br/>
 
 
-# Installatiom & Usage Instructions: <br/>
+# Installation & Usage Instructions: <br/>
 ### Installation: <br/>
 1)Open file, go to Open Scene, select VR.unity scene
 2)Press on file, go to Build Settings, select VR.unity in Scene in Build
@@ -10,7 +10,8 @@
 5) Press Switch Platform to Android Platform
 6) Select Meta Quest 2 Device on Run Device in Build Settings
 7) Select Build and Run
-
+8) Make a file name and save as type .apk and press Save
+9) Prompt of unsupported input handling will appear, click Yes
 
 ### Usage Intructions:<br/>
 1) After loading the game, look to the right to differentiate items which are recyclable and those that are not
@@ -24,11 +25,10 @@
 
 
 # Development Tools Used:<br/>
-	-Unity 2019
+	-Unity 2021
 	-Visual Studio 2022
   	-Mixed Reality Toolkit
-<<<<<<< HEAD
-	-GitHub Desktop
+	- GitHub Desktop
 	- Unity Assets
   
 
@@ -46,7 +46,7 @@
 - Sci-Fi Texture Pack 1by FireBolt Studios
 - Stylized Sci-Fi Texture by LowlyPoly
 - Survival Game Tools by cookiepopworks.com
--Pressable HoloLens Button by Mixed Reality Toolkit
+- Pressable HoloLens Button by Mixed Reality Toolkit
 
 
 ##Software development Kit used
